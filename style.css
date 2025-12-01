@@ -1,0 +1,233 @@
+@media screen and (min-width: 840px) {
+	.tableInfo {
+		background: red;
+	}
+}
+@media screen and (max-width: 536px) {
+	body {
+		margin: 0;
+		font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
+			'Inter', 'Helvetica', 'Arial', sans-serif;
+		color: #202122;
+	}
+	.container {
+		padding: 0 16px;
+	}
+	.navBar {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 54px;
+		background: #eaecf0;
+		align-items: center;
+		padding: 0 16px;
+	}
+	.menu {
+		display: flex;
+		flex-direction: row;
+		gap: 16px;
+		align-items: center;
+	}
+	.menuBtn {
+		width: 24px;
+		height: 24px;
+	}
+	.sideMenu {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background: #eaecf0;
+		height: 100%;
+		transform: translateX(0);
+		transition: all 0.3s ease-in-out;
+	}
+	.sideMenu.hidden {
+		/* display: none; */
+		transform: translateX(-100%);
+	}
+	.navElement {
+		border-bottom: 1px solid #dadde3;
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		padding: 12px 14px;
+		background: white;
+	}
+	.navElement .icon,
+	.personalElement .icon,
+	.navElement #exitMenuBtn {
+		width: 20px;
+		height: 20px;
+	}
+	.navElement .text,
+	.personalElement .text {
+		color: #54595d;
+		font-weight: 700;
+	}
+	.personal {
+		margin: 22px 0;
+		display: flex;
+		flex-direction: column;
+		gap: 22px;
+	}
+	.personalElement {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		padding: 12px 14px;
+		background: white;
+	}
+	.hlist {
+		display: flex;
+		flex-direction: column;
+	}
+	.hlistElement {
+		margin: 8px 16px;
+		color: #5d6266;
+	}
+	.search {
+		width: 32px;
+		height: 32px;
+	}
+	.pagesBar {
+		display: flex;
+		padding: 4px 0;
+		flex-direction: row;
+		gap: 10px;
+	}
+	.pagesBar a {
+		text-decoration: none;
+		color: #54595d;
+		&::after {
+			display: block;
+			content: '';
+			width: 100%;
+			height: 2px;
+			position: relative;
+			bottom: -6px;
+		}
+		&:active::after {
+			border-bottom: 2px solid #54595d;
+			height: 0;
+		}
+	}
+	.actions {
+		height: 48px;
+		border-bottom: 2px solid #dadde3;
+		border-top: 2px solid #dadde3;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.actions > div {
+		display: flex;
+		gap: 16px;
+		align-items: center;
+	}
+	.translator,
+	.star,
+	.pen {
+		width: 24px;
+		height: 24px;
+	}
+
+	table {
+		width: 100%;
+		align-content: center;
+		border: 1px solid #dadde3;
+		padding: 0;
+		border-spacing: 0;
+	}
+	tbody tr {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+		border-bottom: 1px solid #dadde3;
+		height: 40px;
+		padding: 7px 10px;
+	}
+	tbody .img {
+		height: max-content;
+	}
+	tbody img {
+		width: 100%;
+		/* height: max-content; */
+	}
+	.tableInfo {
+		background: #c0daff;
+	}
+	.content {
+		padding-bottom: 32px;
+	}
+	.footer {
+		background: #eaecf0;
+		padding: 16px;
+	}
+	.footer .logo {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid #c8ccd1;
+		padding: 8px 0;
+		align-items: center;
+	}
+	.footer .logo > img {
+		height: 20px;
+	}
+	.footer .logo > div {
+		display: flex;
+		gap: 16px;
+		align-items: center;
+	}
+	.wikimedia,
+	.mediawikiCompact {
+		width: 25px;
+		height: 25px;
+		padding: 10px;
+		background: white;
+		border: 1px solid #93979c;
+	}
+	.footerInfo {
+		padding: 10px 0;
+	}
+	.footerInfo a {
+		text-decoration: none;
+	}
+	.footerLinks {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-wrap-mode: nowrap;
+		row-gap: 8px;
+	}
+	.footerLinks a {
+		text-decoration: none;
+		&::after {
+			content: ' • ';
+			margin: 0 8px;
+		}
+	}
+	.collapseHeading {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		border-bottom: 1px solid #dadde3;
+	}
+	.collapseHeading img {
+		width: 24px;
+		height: 24px;
+	}
+	.closed {
+		rotate: 180deg;
+	}
+	.collapseContent.hidden {
+		display: none;
+	}
+	h1,
+	h2 {
+		font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;
+		font-weight: 500;
+	}
+}
