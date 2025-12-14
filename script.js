@@ -33,3 +33,46 @@ exitMenuBtn.addEventListener('click', () => {
 		? sideMenu.classList.add('hidden')
 		: null
 })
+
+const h1 = document.querySelector('h1')
+let isOpened1 = false
+h1.addEventListener('click', () => {
+	h1.textContent = 'Самая Лучная Девушка на свете ❤️'
+	isOpened1 = true
+})
+
+const translator = document.querySelector('.actions .leftBar img')
+const translatorHiddenText = document.querySelector('.actions .leftBar span')
+let isOpened2 = false
+translator.addEventListener('click', () => {
+	if (isOpened1) {
+		translatorHiddenText.classList.remove('hiddenText')
+		isOpened2 = true
+	}
+})
+
+const search = document.querySelector('.search')
+const searchHiddenText = document.querySelector('tbody .img td span')
+let isOpened3 = false
+search.addEventListener('click', () => {
+	if (isOpened2) {
+		searchHiddenText.classList.remove('hiddenText')
+		isOpened3 = true
+	}
+})
+
+const enter = document.querySelector('.personalElement.surpriseBtn')
+const heart = document.querySelector('.sideMenuContent .heart img')
+let isOpened4 = false
+enter.addEventListener('click', () => {
+	if (isOpened3) {
+		heart.classList.remove('hiddenDiv')
+		isOpened4 = true
+	}
+})
+
+heart.addEventListener('click', () => {
+	if (isOpened4) {
+		document.location.replace('https://vk.com/bykovartemm')
+	}
+})

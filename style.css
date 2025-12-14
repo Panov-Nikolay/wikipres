@@ -46,6 +46,19 @@
 		/* display: none; */
 		transform: translateX(-100%);
 	}
+	.sideMenuContent .hiddenDiv {
+		display: none;
+	}
+	.sideMenuContent .heart {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50vh;
+	}
+	.sideMenuContent .heart img {
+		width: 300px;
+		height: 300px;
+	}
 	.navElement {
 		border-bottom: 1px solid #dadde3;
 		display: flex;
@@ -120,10 +133,13 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-	.actions > div {
+	.actions div {
 		display: flex;
 		gap: 16px;
 		align-items: center;
+	}
+	.actions .leftBar .hiddenText {
+		display: none;
 	}
 	.translator,
 	.star,
@@ -155,6 +171,18 @@
 	}
 	tbody .img {
 		height: max-content;
+	}
+	tbody .img td {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 32px;
+	}
+	tbody .img td span {
+		writing-mode: sideways-lr;
+	}
+	tbody .img td .hiddenText {
+		display: none;
 	}
 	tbody img {
 		width: 100%;

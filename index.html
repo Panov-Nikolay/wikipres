@@ -42,7 +42,7 @@
 							</div>
 						</div>
 						<div class="personal">
-							<div class="personalElement">
+							<div class="personalElement surpriseBtn">
 								<img
 									src="img/arrowInSquare.svg"
 									alt=""
@@ -60,20 +60,26 @@
 							<span class="hlistElement">Описание Википедии</span>
 							<span class="hlistElement">Отказ от ответственности</span>
 						</div>
+						<div class="heart">
+							<img class="hiddenDiv" src="img/heart.svg" alt="" />
+						</div>
 					</div>
 				</div>
 			</div>
 			<img class="search" src="img/search.svg" />
 		</div>
 		<div class="container">
-			<h1>Самая Лучная Девушка на свете</h1>
+			<h1 id="header">Самая Лучная Девушка на свете</h1>
 			<div class="pagesBar">
 				<a>Статья</a>
 				<a>Обсуждение</a>
 			</div>
 			<div class="actions">
-				<img src="img/translator.svg" alt="" class="translator" />
-				<div>
+				<div class="leftBar">
+					<img src="img/translator.svg" alt="" class="translator" />
+					<span class="hiddenText">Молодец, ищи дальше</span>
+				</div>
+				<div class="rightBar">
 					<img src="img/star.svg" alt="" class="star" />
 					<img src="img/pen.svg" alt="" class="pen" />
 				</div>
@@ -93,6 +99,9 @@
 						</tr>
 						<tr class="img">
 							<td colspan="2">
+								<span class="hiddenText" style="font-size: 20px">
+									<strong>ТЫ УЖЕ БЛИЗКО</strong>
+								</span>
 								<img src="img/mainPhoto.jpg" alt="" />
 							</td>
 						</tr>
@@ -137,16 +146,10 @@
 					</tbody>
 				</table>
 				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat quas,
-					beatae accusamus qui illum porro vero repellendus quaerat laborum
-					rerum fugit eligendi delectus dolorum ea perferendis nam alias aliquam
-					id.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat quas,
-					beatae accusamus qui illum porro vero repellendus quaerat laborum
-					rerum fugit eligendi delectus dolorum ea perferendis nam alias aliquam
-					id.
+					Согласно длительным наблюдениям, Ксения обладает выраженным
+					стабилизирующим эффектом на эмоциональное состояние окружающих.
+					Взаимодействие с объектом способствует улучшение настроения, повышению
+					мотивации и формированию чувства уюта (но это не 100%).
 				</p>
 				<div class="collapse">
 					<div class="collapseHeading collapseClosed">
@@ -212,23 +215,34 @@
 						<h2>Научные факты</h2>
 					</div>
 					<div class="collapseContent hidden">
-						Опасности и аномалии:
-						<ul>
-							<li>Опасна при недосыпе</li>
-							<li>Может в случайный момент применить физическое насилие</li>
-							<li>
-								Может быть злюкой на всех, потому что замёрзла дверь в машине
-							</li>
-						</ul>
-						Исследования и наблюдения:
-						<ul>
-							<li>
-								Учёные до сих пор не могут объяснить, почему она ТАКАЯ КРАСИВАЯ
-							</li>
-							<li>
-								Зафиксировано ♾️ случаев повышения настроения при её появлении
-							</li>
-						</ul>
+						<div>
+							Опасности и аномалии:
+							<ul>
+								<li>Опасна при недосыпе</li>
+								<li>
+									Может в случайный момент применить физическое насилие
+									<sup>1</sup>
+								</li>
+								<li>
+									Может быть злюкой на всех, потому что замёрзла дверь в машине
+								</li>
+							</ul>
+						</div>
+						<p style="margin-bottom: 24px">
+							<sup>1</sup> - подтверждено личным опытом автора
+						</p>
+						<div>
+							Исследования и наблюдения:
+							<ul>
+								<li>
+									Учёные до сих пор не могут объяснить, почему она ТАКАЯ
+									КРАСИВАЯ
+								</li>
+								<li>
+									Зафиксировано ♾️ случаев повышения настроения при её появлении
+								</li>
+							</ul>
+						</div>
 						Мифы и заблуждения:
 						<ul style="list-style-type: '❌'">
 							<li>Всегда спокойная</li>
@@ -244,6 +258,7 @@
 						несмотря на всё это, она остаётся таким же весёлым и игривым
 						реактивным двигателем жизни Быкова А.С.. С НОВЫМ ГОДОМ, КСЮШ!
 					</p>
+					<p>(и да, нажми на <a href="#header">заголовок</a> страницы)</p>
 				</div>
 			</div>
 		</div>
