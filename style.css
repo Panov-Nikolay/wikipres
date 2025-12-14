@@ -146,18 +146,24 @@
 		align-items: center;
 		text-align: center;
 		border-bottom: 1px solid #dadde3;
-		height: 40px;
+		/* height: 40px; */
 		padding: 7px 10px;
+	}
+	tbody tr th,
+	tbody tr td {
+		width: 50%;
 	}
 	tbody .img {
 		height: max-content;
 	}
 	tbody img {
 		width: 100%;
-		/* height: max-content; */
 	}
 	.tableInfo {
 		background: #c0daff;
+	}
+	.tableHeader {
+		width: 100%;
 	}
 	.content {
 		padding-bottom: 32px;
