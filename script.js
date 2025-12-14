@@ -27,11 +27,15 @@ menuBtn.addEventListener('click', () => {
 	sideMenu.classList.contains('hidden')
 		? sideMenu.classList.remove('hidden')
 		: null
+	sideMenu.addEventListener('touchmove', e => e.preventDefault(), {
+		passive: false,
+	})
 })
 exitMenuBtn.addEventListener('click', () => {
 	!sideMenu.classList.contains('hidden')
 		? sideMenu.classList.add('hidden')
 		: null
+	sideMenu.removeEventListener('touchmove', e => e.preventDefault())
 })
 
 const h1 = document.querySelector('h1')
